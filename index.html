@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attention Apparel - Online Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Attention Apparel</h1>
+      <p>Fashion Dengan Model Yang Unik</p>
+    </header>
+
+    <div class="container">
+      <div class="logo">
+        <img
+          src="logo.png"
+          alt="Logo Attention Apparel"
+          style="width: 300px; height: auto"
+        />
+      </div>
+      <div class="about">
+        <h2>Tentang Kami</h2>
+        <p style="font-size: 20px; font-weight: bold;"></p>
+          Attention dibuat dari 100% cotton premium dengan potongan modern dan
+          nyaman. Attention dibuat dari 100% menggunakan cotton premium dengan
+          potongan S24 Signature Fit yang modern dan nyaman. Dengan menggunakan
+          desain minimalis dan warna yang tidak mudah luntur cocok untuk segala
+          gaya dan aktivitas. Diproduksi secara ramah lingkungan dengan jahitan
+          presisi untuk kualitas terbaik.
+        </p>
+      </div>
+
+      <!-- Produk -->
+      <div class="products">
+        <h2>Daftar Produk</h2>
+        <div class="product-list">
+          <div class="product">
+            <img
+              src="brand.jpg"
+              alt="Baju 1"
+              style="width: 250px; height: auto"
+            />
+            <h3>Baju Keren</h3>
+            <p>Rp150.000</p>
+            <button class="buy-btn" onclick="addToCart('Baju Keren', 150000)">
+              🛒 Tambah ke Keranjang
+            </button>
+          </div>
+          <div class="product">
+            <img
+              src="brand2.png"
+              alt="Baju 2"
+              style="width: 250px; height: auto"
+            />
+            <h3>Baju Eksklusif</h3>
+            <p>Rp200.000</p>
+            <button
+              class="buy-btn"
+              onclick="addToCart('Baju Eksklusif', 200000)"
+            >
+              🛒 Tambah ke Keranjang
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Keranjang Belanja -->
+      <div class="cart">
+        <h2>Keranjang Belanja</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: <span id="cart-total">Rp0</span></p>
+        <button class="checkout-btn" onclick="checkout()">🛍️ Checkout</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>HUB NO 08925337613 UNTUK INFO LEBIH LANJUT</p>
+    </footer>
+  </body>
+</html>
